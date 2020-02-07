@@ -2,28 +2,32 @@
 /* 
 References:
 https://github.com/libuv/libuv/blob/v1.x/src/unix/core.c
+https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/46255.pdf (Semantics of Asynchronous JavaScript)
 https://blog.insiderattack.net/handling-io-nodejs-event-loop-part-4-418062f917d1
-https://github.com/nodejs/help/issues/1118
+https://github.com/nodejs/help/issues/1118 (Hỏi đáp về event loop, khá okey)
 https://jakearchibald.com/2015/tasks-microtasks-queues-and-schedules/ (event loop on browser only)
 https://www.youtube.com/watch?v=cCOL7MC4Pl0 by Jake Archibald (browser only)
 https://www.youtube.com/watch?v=8aGhZQkoFbQ by Philip Roberts -> the best video about asynchronous (only browser)
 https://www.youtube.com/watch?v=sGTRmPiXD4Y by Saul Ibarra Coretge --> libuv explained in C code, good one.
 https://www.youtube.com/watch?v=P9csgxBgaZ8 by Sam Roberts
 https://www.youtube.com/watch?v=gl9qHml-mKc by Danie Khan
-https://www.youtube.com/watch?v=u1kqx6AenYw (Chú ý thứ tự nextTick và Promise chưa đúng) by Erin Zimmer
-https://www.youtube.com/watch?v=PNa9OMajw9w (Chú ý thứ tự nextTick và Promise chưa đúng) by Bert Belder
+https://www.youtube.com/watch?v=u1kqx6AenYw by Erin Zimmer (Chú ý thứ tự nextTick và Promise chưa đúng) 
+https://www.youtube.com/watch?v=PNa9OMajw9w by Bert Belder (Chú ý thứ tự nextTick và Promise chưa đúng)
 https://www.youtube.com/watch?v=9y67eMUzj9A (also mention THREADPOOL)
-https://www.facebook.com/groups/jsland/permalink/427721001124549/ (by Chau Tran - THREADPOOL, note: the size of threadpool is (bản 1.30.0) now 1024)
+https://www.facebook.com/groups/jsland/permalink/427721001124549/ (by Chau Tran - THREADPOOL, note: the size of threadpool is (libuv bản 1.30.0) now 1024)
 https://frontendmasters.com/courses/servers-node-js/timer-queue/ (paid course) --> good to understand asynchronous (no mention THREADPOOL)
 https://www.udemy.com/course/advanced-node-for-developers/ (paid course)    --> good to understand asynchronous (also mention THREADPOOL)
 https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/ (paid course) --> good to understand asynchronous (also mention THREADPOOL)
 http://nikhilm.github.io/uvbook/basics.html#event-loops
+https://github.com/nodejs/node/pull/22842 (Thay đổi về MicroTask trên Node11, để giống browser)
+https://github.com/nodejs/nodejs.org/pull/1804 (Trao đổi thêm về MicroTask trên Node11, để giống browser)
 https://stackoverflow.com/questions/47724811/why-setimmediate-execute-before-fs-readfile-in-nodejs-event-loops-works
 https://gist.github.com/thlorenz/8dd5d3a50ee14457afce#uv__run_timers
 https://www.fatalerrors.org/a/nodejs-series-q-a-s-understanding-of-event-loop-timers-and-process.nexttick.html ==> 
 "Here we only care about UV_RUN_DEFAULT, because Node event loop uses this mode."
 https://stackoverflow.com/questions/26740888/how-node-js-event-loop-model-scales-well ==> the diagram in this page is the best on the internet :-)
 https://stackoverflow.com/questions/55467033/difference-between-process-nexttick-and-queuemicrotask : process.nextTick and queueMicrotask
+http://voidcanvas.com/nodejs-event-loop/
  */
 
 /* 

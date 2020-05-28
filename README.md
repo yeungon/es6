@@ -1,14 +1,14 @@
-# javascript
+# JavaScript
 JavaScript - from basic to advanced concepts course on Youtube
 
-# ECMAScript 6 <sup>[git.io/es6features](http://git.io/es6features)</sup>
+# ECMAScript 6 - bản dịch tiếng Việt từ nguồn git.io/es6features
 
 ## Introduction
-ECMAScript 6, also known as ECMAScript 2015, is the latest version of the ECMAScript standard.  ES6 is a significant update to the language, and the first update to the language since ES5 was standardized in 2009. Implementation of these features in major JavaScript engines is [underway now](http://kangax.github.io/es5-compat-table/es6/).
+ECMAScript 6, còn được gọi là ECMAScript 2015, là phiên bản tiêu chuẩn ECMAScript mới nhất.  ES6 là phiên bản nâng cấp nhiều tính năng của ngôn ngữ, cũng là bản cập nhật đầu tiên kể từ khi tiêu chuẩn ES5 được hoàn thiện năm 2009. Việc triển khai các tính năng của engine JavaScript đang được thực hiện [underway now](http://kangax.github.io/es5-compat-table/es6/).
 
-See the [ES6 standard](http://www.ecma-international.org/ecma-262/6.0/) for full specification of the ECMAScript 6 language.
+Xem thêm [chuẩn ES6](http://www.ecma-international.org/ecma-262/6.0/) để biết mô tả chi tiết:
 
-ES6 includes the following new features:
+ES6 gồm các tính năng mới sau:
 - [arrows](#arrows)
 - [classes](#classes)
 - [enhanced object literals](#enhanced-object-literals)
